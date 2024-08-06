@@ -1,0 +1,59 @@
+.admin-dashboard {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .left-panel {
+    width: 300px;
+    background-color: #333;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .left-panel.hidden {
+    transform: translateX(-100%);
+  }
+  
+  .right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .toggle-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .content-panel {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .option-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .option-item.selected {
+    background-color: #444;
+  }
+  
+  .logout-btn {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background-color: #a93226;
+  }
+  
